@@ -9,7 +9,7 @@ export default function Profile({ params }) {
   useEffect(() => {
     async function fetchClient() {
       let response = await fetch(
-        `https://beta-api.vostro-new.com/api/v1/clients/get/${id}`
+        // `https://beta-api.vostro-new.com/api/v1/clients/get/${id}`
       );
 
       const jsonResponse = await response.json();

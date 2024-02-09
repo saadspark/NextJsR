@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 async function fetchClient() {
-  let response = await fetch("https://beta-api.vostro-new.com/api/v1/clients/get");
+  // let response = await fetch("https://beta-api.vostro-new.com/api/v1/clients/get");
   const jsonResponse = await response.json();
   const data = jsonResponse.data.data;
   return data;
