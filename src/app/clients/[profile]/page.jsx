@@ -10,7 +10,7 @@ export default function Profile({ params }) {
   useEffect(() => {
     async function fetchClient() {
       let response = await fetch(
-        `http://127.0.0.1:8000/api/v1/clients/get/${id}`
+        `https://beta-api.vostro-new.com/api/v1/clients/get/${id}`
       );
 
       const jsonResponse = await response.json();
@@ -47,4 +47,3 @@ const Loader = ()=>{
     <p>Loading....</p>
   )
 }
-   
